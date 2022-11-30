@@ -1,0 +1,39 @@
+.ItemCard {
+  position: relative;
+  background: #f3f3f3;
+  padding: 1.5rem;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-top: 0.4rem solid #00a7e2;
+  border-bottom: 0.4rem solid #00a7e2;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  transition: all 0.2s;
+}
+
+.ItemCard:hover {
+  box-shadow: 2px 3px 20px 6px rgb(32 33 36 / 28%);
+  transform: scale(1.02);
+}
+
+.ItemCard h1 {
+  border-left: 0.4rem solid #00a7e2;
+  text-align: left;
+  padding-left: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.ItemCard:hover .icon-delete {
+  display: initial;
+}
+
+.icon-delete {
+  display: none;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.5rem;
+  color: #dc3545;
+  cursor: pointer;
+}
